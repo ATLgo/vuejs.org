@@ -4,8 +4,6 @@ type: router
 order: 3
 ---
 
-# 动态路由匹配
-
 我们经常需要把某种模式匹配到的所有路由，全都映射到同个组件。例如，我们有一个 `User` 组件，对于所有 ID 各不相同的用户，都要使用这个组件来渲染。那么，我们可以在  `vue-router` 的路由路径中使用『动态路径参数』（dynamic segment）来达到这个效果：
 
 
@@ -42,7 +40,7 @@ const User = {
 | /user/:username | /user/evan | `{ username: 'evan' }` |
 | /user/:username/post/:post_id | /user/evan/post/123 | `{ username: 'evan', post_id: 123 }` |
 
-除了 `$route.params` 外，`$route` 对象还提供了其它有用的信息，例如，`$route.query`（如果 URL 中有查询参数）、`$route.hash` 等等。你可以查看 [API 文档](../api/route-object.md) 的详细说明。
+除了 `$route.params` 外，`$route` 对象还提供了其它有用的信息，例如，`$route.query`（如果 URL 中有查询参数）、`$route.hash` 等等。你可以查看 [API 文档](../api/route-object.html) 的详细说明。
 
 ### 响应路由参数的变化
 
